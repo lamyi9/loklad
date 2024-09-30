@@ -1,0 +1,30 @@
+---
+import '../styles/base.css';
+import Navbar from '../components/Navbar.astro'
+
+import Footer from '../components/Footer.astro'
+import BaseHead from '../components/BaseHead.astro'
+
+---
+
+<html lang="en">
+<head>
+    <BaseHead/>
+</head>
+<body class="w-full flex flex-col justify-center ">
+<div class="">
+    <Navbar/>
+	<div class="overflow-x-clip  h-screen">
+        <slot/>
+    </div>
+
+ 
+    
+    
+    
+</div>
+    
+<Footer/>
+    
+ </body>
+    </html>
