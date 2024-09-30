@@ -32,7 +32,7 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
 ---
 <AppLayout>
  
-    <section  style={backgroundHero} class="bg-cover bg-center	">
+    <section  style={backgroundHero} class="bg-cover bg-center	bg-fixed	">
         <div class="mx-auto p-2 md:px-5  max-w-screen-xl w-full ">
             <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg py-8 md:p-12 mb-8 mt-20">
                 <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
@@ -43,7 +43,7 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
                 </a>
                 <h1 class="text-white dark:text-white text-3xl md:text-5xl font-extrabold mb-2">{entry.data.title}</h1>
                 <p class="text-white pb-5">TunnelBear encrypts your internet connection to keep your online activity private on any network.</p>
-                <div class="py-5 text-white grid  grid-cols-4 text-sm  bg-slate-900 rounded-2xl">
+                <div class="py-5 text-white grid  grid-cols-4 text-sm  backdrop-blur-lg  bg-slate-900/50 rounded-2xl">
                     <div class="text-center px-3 border-slate-700  border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2  ">
                        <p>Developer:</p>
                         <p class="font-bold pt-2">{entry.data.author}</p>
