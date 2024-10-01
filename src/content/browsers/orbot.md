@@ -3,7 +3,7 @@ title: ཨོར་བྷོར་།
 
 author: The Tor Project
 thumbnail: /images/thumbnail-orbot.svg
-banner: 
+banner: /images/banner-orbot.webp
 website: https://psiphon.ca
 counry: Canada
 category: security

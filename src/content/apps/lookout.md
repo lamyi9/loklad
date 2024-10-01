@@ -5,7 +5,7 @@ summary: 'lookout is the ultimate data usage monitor for Android! Our app makes 
 banner: '/images/banner-lookout.jpg'
 thumbnail: '/images/thunbnail-lookout.png'
 author: 'Lookout Mobile Security'
-website: 'httpsi://lookout.com/'
+website: 'lookout.com'
 country: 'United State'
 rating: 4.3
 apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/Lookout.apk

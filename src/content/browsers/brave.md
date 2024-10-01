@@ -2,9 +2,9 @@
 title: 'Brave'
 category:  Browser
 summary: 'Privately browse the internet, for free! The Brave Private Browser App is your fast, free, and safe private web browser with ad blocker and pop-up blocker. Privately browse and search the internet without being tracked by advertisers, malware and pop-ups.'
-banner: '/images/psiphon-banner.png'
+banner: '/images/banner-brave.png'
 thumbnail: '/images/thumbnail-brave.webp'
-author: 'Brendan Eich།'
+author: 'Brendan Eich'
 website: 'https://brave.com'
 country: 'ཨ་རི།'
 rating: 4.3

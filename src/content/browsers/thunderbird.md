@@ -1,10 +1,11 @@
 ---
 title: Thunderbird
-banner: 
-summary:
+summary: Meet Thunderbird, the email, calendar, and contacts app that maximizes your freedoms.
+banner: /images/banner-thunderbird.png
 thumbnail: /images/thumbnail-thunderbird.png
-owner: Mozilla, US
+author: Mozilla, US
 website: https://www.thunderbird.net
+country: USA
 category: Email
 rating: 4.6
 apk: 

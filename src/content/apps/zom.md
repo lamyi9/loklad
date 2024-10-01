@@ -1,11 +1,11 @@
 ---
 title: 'Zom'
-category:  Communication
+category:  Chat
 summary: 'glasswire is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits, and WiFi network activity. Instantly see what apps are slowing your phone’s Internet connection or wasting your mobile data.'
 banner: '/images/banner-zom.png'
 thumbnail: '/images/zom-thumbnail.png'
 author: 'Zom Communication'
-website: 'https://zom.im'
+website: 'zom.im'
 country: 'xxxxxxx'
 rating: 4.7
 apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/zom.apk

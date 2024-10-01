@@ -5,7 +5,7 @@ summary: 'glasswire is the ultimate data usage monitor for Android! Our app make
 banner: '/images/glasswire-banner.webp'
 thumbnail: '/images/glasswire-thumbnail.jpg'
 author: 'SecureMix LLC'
-website: 'https://www.glasswire.com/'
+website: 'www.glasswire.com'
 country: 'Austin, TX 78701 USA'
 rating: 4.3
 apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/GlassWire.apk

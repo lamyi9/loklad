@@ -54,7 +54,7 @@ const tools = await getCollection("tools");
             </ul>
         </div>
             <div id="default-tab-content">
-                <div class=" p-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-6 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class=" p-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-3 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
                  {
                     apps.map((app)=>(
                     <CardMd title={app.data.title} category={app.data.category} rating={app.data.rating} thumbnail={app.data.thumbnail} url={`/apps/${app.slug}`}/>
@@ -67,7 +67,7 @@ const tools = await getCollection("tools");
             <div class="hidden  p-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7" id="browser" role="tabpanel" aria-labelledby="dashboard-tab">
                 {
                     browsers.map((browser)=>(
-                    <CardMd title={browser.data.title} category={browser.data.category} rating={browser.data.rating} thumbnail={browser.data.thumbnail} href={'/browsers/${app.slug}'}/>
+                    <CardMd title={browser.data.title} category={browser.data.category} rating={browser.data.rating} thumbnail={browser.data.thumbnail} url={`/browsers/${browser.slug}`}/>
                     ))
                  }
             </div>
@@ -75,7 +75,7 @@ const tools = await getCollection("tools");
             <div class="hidden p-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-6" id="tools" role="tabpanel" aria-labelledby="tools-tab">
                 {
                     tools.map((tool)=>(
-                    <CardMd title={tool.data.title} category={tool.data.category} rating={tool.data.rating} thumbnail={tool.data.thumbnail} href={'/tools/${app.slug}'}/>
+                    <CardMd title={tool.data.title} category={tool.data.category} rating={tool.data.rating} thumbnail={tool.data.thumbnail} url={'/tools/${app.slug}'}/>
                     ))
                  }
             </div>
