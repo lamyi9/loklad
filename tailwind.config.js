@@ -7,7 +7,9 @@ export default {
         brownDark: "#944343",
         brown : "#c55959",
         brownLight : "#d48383",
-        
+      },
+      fontFamily:{
+        'bo': ['bo']
       }
     },
    

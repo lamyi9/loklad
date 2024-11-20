@@ -3,3 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+  
+  @font-face {
+    font-family: 'bo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/MonlamUniOuChan2.ttf) format('truetype');
+  }
+}

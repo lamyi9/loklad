@@ -1,6 +1,7 @@
 ---
 import '../styles/base.css';
 import Navbar from '../components/Navbar.astro'
+import { ViewTransitions } from 'astro:transitions';
 
 import Footer from '../components/Footer.astro'
 import BaseHead from '../components/BaseHead.astro'
@@ -10,18 +11,14 @@ import BaseHead from '../components/BaseHead.astro'
 <html lang="en">
 <head>
     <BaseHead/>
+    <ViewTransitions />
 </head>
 <body class="w-full flex flex-col justify-center ">
 <div class="">
     <Navbar/>
-	<div class="overflow-x-clip  ">
+	<div class="overflow-x-clip ">
         <slot/>
-    </div>
-
- 
-    
-    
-    
+    </div> 
 </div>
     
 <Footer/>
