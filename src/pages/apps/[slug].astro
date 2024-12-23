@@ -30,7 +30,7 @@ const {Content} = await entry.render();
 const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,0), rgba(38,38,38,0.8), rgba(38,38,38,1)), url('${entry.data.banner}')`
 ---
 <AppLayout>
- 
+
     <section  style={backgroundHero} class="bg-cover bg-center	bg-fixed" transition:name={entry.data.title}>
         <div class="mx-auto pt-40 md:px-5  max-w-screen-xl w-full flex p-5" >
             <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg   mb-8 ">
@@ -43,12 +43,12 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
                 
                 <h1 class="text-white dark:text-white text-3xl md:text-5xl font-extrabold mb-2">{entry.data.title}</h1>
                
-                <p class="text-white pb-5">TunnelBear encrypts your internet connection to keep your online activity private on any network.</p>
+                <p class="text-white pb-5">{entry.data.summary}</p>
                  <div class="flex gap-2 items-center">
                   <p class="text-white">Available in </p>
                   { entry.data.apk &&<Android color="white" />}
                   { entry.data.windows &&<Windows color="white" /> }
-                  { entry.data.apple && <Apple color="white" /> }
+                  { entry.data.mac && <Apple color="white" /> }
                 </div>
                 <div class="py-15 text-white grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  text-sm  backdrop-blur-lg  bg-slate-900/50 rounded-2xl">
                     <div class="text-center p-3 border-slate-700  border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2  ">

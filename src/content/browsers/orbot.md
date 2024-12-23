@@ -1,6 +1,7 @@
 ---
 title: ཨོར་བྷོར་།
-
+Category: VPN
+collection: browsers
 author: The Tor Project
 thumbnail: /images/thumbnail-orbot.svg
 banner: /images/banner-orbot.webp

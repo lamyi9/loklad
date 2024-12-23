@@ -1,6 +1,7 @@
 ---
 title: 'Lookout'
 category:  VPN
+collection: apps
 summary: 'lookout is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits'
 banner: '/images/banner-lookout.jpg'
 thumbnail: '/images/thunbnail-lookout.png'

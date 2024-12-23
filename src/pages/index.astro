@@ -8,9 +8,11 @@ import Browser from '../components/icons/browser.astro'
 import Tools from '../components/icons/toolbox.astro'
 import CardMd from '../components/CardMd.astro'
 import TopPicks from '../components/TopPicks.astro'
+import TopPicksMac from '../components/TipPicksMac.astro'
 
 import { getCollection } from 'astro:content';
 import BaseLayout from '../Layouts/BaseLayout.astro';
+import TopPicksAndroid from '../components/TopPicksAndroid.astro';
 const apps = await getCollection("apps");
 const browsers = await getCollection("browsers");
 const tools = await getCollection("tools");
@@ -71,6 +73,8 @@ const tools = await getCollection("tools");
         </div>
 
     <TopPicks/>
+    <TopPicksAndroid/>
+    <TopPicksMac/>
 
 
 

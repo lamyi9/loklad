@@ -1,6 +1,7 @@
 ---
 title: 'Firefox'
 category:  Browser
+collection: browsers
 summary: 'glasswire is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits, and WiFi network activity. Instantly see what apps are slowing your phone’s Internet connection or wasting your mobile data.'
 banner: '/images/banner-firefox.png'
 thumbnail: '/images/thumbnail-firefox.png'
@@ -10,7 +11,7 @@ country: 'ཨ་རི།'
 rating: 4.3
 apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/fenix-110.0.1-arm64-v8a.apk
 windows:  https://s3.amazonaws.com/loklad.com/assets/files/win/FirefoxSetup115.0.3.exe
-apple:  https://s3.amazonaws.com/loklad.com/assets/files/mac/Firefox115.0.3.dmg
+mac:  https://s3.amazonaws.com/loklad.com/assets/files/mac/Firefox115.0.3.dmg
 
 ---
 

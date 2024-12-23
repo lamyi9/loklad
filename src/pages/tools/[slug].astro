@@ -1,0 +1,31 @@
+---
+import '../../styles/base.css';
+
+import AppLayout from "../../Layouts/AppLayout.astro";
+import Star from "../../components/icons/star.astro";
+import Apple from '../../components/icons/apple.astro'
+import Android from '../../components/icons/android.astro'
+import Windows from '../../components/icons/windows.astro'
+import Download from '../../components/icons/download.astro'
+
+
+
+
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths(){
+    const appEntries = await getCollection("tools"); 
+    return appEntries.map((entry) => ({
+        params: {
+            slug: entry.slug,
+            title: entry.data.title,
+        },
+        props: {entry}
+    }))
+}
+
+const {entry} = Astro.props;
+const {Content} = await entry.render();
+
+const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,0), rgba(38,38,38,0.8), rgba(38,38,38,1)), url('${entry.data.banner}')`
+---

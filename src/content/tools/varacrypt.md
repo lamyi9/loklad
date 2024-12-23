@@ -1,6 +1,7 @@
 ---
 title: VeraCrypt
 category:  Toolkid
+collection: tools
 summary: 'རྡུང་རྡུང་ནི་བཀོལ་ཆས་ཆུང་ཆུང་ཞིག་ཡིན་ལ། དེས། ཁྱེད་ཀུ་ཤུ་ཀློག་ཀླད་ནང་དུ་ནང་འཇུག་བྱས་པའི་བཀོལ་ཆས་ཐོ་འགོད་བྱས་ཏེ།'
 banner: '/images/psiphon-banner.png'
 thumbnail: '/images/thumbnail-varacrypt.png'
