@@ -64,8 +64,8 @@ const tools = await getCollection("tools");
                 </div>
                 <div class="hidden p-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-6" id="tools" role="tabpanel" aria-labelledby="tools-tab">
                     {
-                        tools.map((tool)=>(
-                        <CardMd title={tool.data.title} category={tool.data.category} rating={tool.data.rating} thumbnail={tool.data.thumbnail} url={'/tools/${app.slug}'}/>
+                        tools.map((tools)=>(
+                        <CardMd title={tools.data.title} category={tools.data.category} rating={tools.data.rating} thumbnail={tools.data.thumbnail} url={`/tools/${tools.slug}`}/>
                         ))
                     }
                 </div>

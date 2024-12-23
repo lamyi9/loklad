@@ -3,12 +3,12 @@ title: Eraser
 category:  Toolkid
 collection: tools
 summary: 'ཕབ་ལེན་གནང་རོགས།གསུབ་ཆས་ནི་སྒེའུ་ཁུང་མ་ལག་གི་ཆེད་དུ་བཟོས་པའི་ཚད་མཐོ་བའི་བདེ་འཇགས་ཀྱི་ཡོ་ཆས་ཤིག་ཡིན་ལ། དེས་ཁྱེད་ཀྱི་གློག་ཀླད་སྟེང་གི་ཡིག་ཆ་རིགས་གཏན་དུ་གཙང་བཟོ་བྱེད་ཀྱི་ཡོད།'
-banner: '/images/psiphon-banner.png'
+banner: '/images/eraser.jpg'
 thumbnail: '/images/thumbnail-eraser.jpg'
 author: 'གསུབ་ཆས།'
 website: 'https://eraser.heidi.ie'
 country: 'xxxxxxxx'
-rating: 4.3
+rating: 4.7
 windows: https://s3.amazonaws.com/loklad.com/assets/files/win/Eraser%206.2.0.2993.exe
 
 ---

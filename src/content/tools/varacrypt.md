@@ -3,12 +3,12 @@ title: VeraCrypt
 category:  Toolkid
 collection: tools
 summary: 'རྡུང་རྡུང་ནི་བཀོལ་ཆས་ཆུང་ཆུང་ཞིག་ཡིན་ལ། དེས། ཁྱེད་ཀུ་ཤུ་ཀློག་ཀླད་ནང་དུ་ནང་འཇུག་བྱས་པའི་བཀོལ་ཆས་ཐོ་འགོད་བྱས་ཏེ།'
-banner: '/images/psiphon-banner.png'
+banner: '/images/veracrypt.jpg'
 thumbnail: '/images/thumbnail-varacrypt.png'
 author: 'IDRIX'
 website: 'https://www.veracrypt'
 country: 'France'
-rating: 4.3
+rating: 4.6
 windows: https://s3.amazonaws.com/loklad.com/assets/files/win/VeraCrypt%20Setup%201.25.9.exe
 apple:  https://s3.amazonaws.com/loklad.com/assets/files/mac/VeraCrypt_1.25.9.dmg
 

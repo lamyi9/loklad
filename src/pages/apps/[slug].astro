@@ -27,13 +27,14 @@ export async function getStaticPaths(){
 const {entry} = Astro.props;
 const {Content} = await entry.render();
 
-const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,0), rgba(38,38,38,0.8), rgba(38,38,38,1)), url('${entry.data.banner}')`
+
+const backgroundHero = `background-image : linear-gradient(101deg, rgba(219,219,219,0) 0%, rgba(255,255,255,0) 98%), url('${entry.data.banner}')`
 ---
 <AppLayout>
 
     <section  style={backgroundHero} class="bg-cover bg-center	bg-fixed" transition:name={entry.data.title}>
         <div class="mx-auto pt-40 md:px-5  max-w-screen-xl w-full flex p-5" >
-            <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg   mb-8 ">
+            <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg   mb-8 " >
                 <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"> 
                     <svg class="w-4 h-4 me-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                         <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
@@ -50,7 +51,8 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
                   { entry.data.windows &&<Windows color="white" /> }
                   { entry.data.mac && <Apple color="white" /> }
                 </div>
-                <div class="py-15 text-white grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  text-sm  backdrop-blur-lg  bg-slate-900/50 rounded-2xl">
+                <br>
+                <div class="py-15 text-white grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  text-sm  backdrop-blur-lg  bg-slate-900/90 rounded-2xl" >
                     <div class="text-center p-3 border-slate-700  border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2  ">
                        <p>Developer:</p>
                         <p class="font-bold pt-2">{entry.data.author}</p>
@@ -73,7 +75,7 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
                     </div>
                 </div>
                
-                <buttom data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer w-auto sm:w-auto md:w-80 flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-brown hover:bg-brownDark focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-10">
+                <buttom data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer w-auto sm:w-auto md:w-80 flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-brown hover:bg-brownDark focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-10" >
                     Download
                 </button>   
             </div>
@@ -83,7 +85,7 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
         
 <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
     <h2 id="accordion-flush-heading-1">
-      <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+      <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1" >
         <span class="text-2xl">Description</span>
         <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -126,7 +128,7 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
                     <h3 class="mb-5   text-brown text-2xl font-semibold pt-5">Download</h3>
                     <div class="flex  justify-between bg-brown rounded-b-2xl overflow-hidden">
                         { entry.data.apk &&
-                            <div class="flex flex-col p-2  w-full justify-center bg-brown hover:bg-brownLight items-center">
+                            <div class="flex flex-col p-2  w-full justify-center bg-brown hover:bg-brownLight items-center" style="background-image:">
                             
                             <a href={entry.data.apk} data-modal-hide="popup-modal" type="button" class="text-slate-700 h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
                                 <Android color="white" /> <span class="px-2 text-lg font-bold text-white">Android</span>
@@ -136,7 +138,7 @@ const backgroundHero = `background-image :linear-gradient(to bottom, rgba(0,0,0,
                         }
                         
                         { entry.data.windows &&
-                            <div class="flex flex-col p-2  w-full justify-center bg-brown hover:bg-brownLight items-center">
+                            <div class="flex flex-col p-2  w-full justify-center bg-brown hover:bg-brownLight items-center" >
                            
                            <a href={entry.data.windows} data-modal-hide="popup-modal" type="button" class="text-slate-700  h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
                                <Windows color="white"/>  <span class="px-2 text-lg font-bold text-white">Windows</span>
