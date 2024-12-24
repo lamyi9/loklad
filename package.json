@@ -12,11 +12,13 @@
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",
     "@astrojs/tailwind": "^5.1.2",
+    "@videojs/themes": "^1.0.1",
     "astro": "^4.16.13",
     "flowbite": "^2.5.1",
     "tailwindcss": "^3.4.13"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.9"
+    "@tailwindcss/forms": "^0.5.9",
+    "video.js": "^8.21.0"
   }
 }
