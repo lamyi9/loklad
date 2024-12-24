@@ -1,0 +1,24 @@
+---
+import Globe from "./icons/Globe.astro";
+import Home from "./icons/Home.astro";
+import Sheild from "./icons/Sheild.astro";
+import Tools from "./icons/Tools.astro";
+---
+
+<div class="flex justify-center w-screen-sm">
+    <div class="bg-white/80  w-full  max-w-96 flex  fixed  bottom-2 z-20 backdrop-blur-md text-red-600  rounded-3xl items-center border-2 border-slate-200 shadow-lg py-5 px-5">
+
+
+      <ul class="text-red-600 flex flex-wrap w-full text-sm  text-center justify-between gap-0" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+            <button  id="tools-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false"  class="px-6">
+                <Sheild/>
+            </button>
+            <button  id="tools-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false"  class="px-6">
+                <Globe/>
+            </button>
+            <button  id="tools-tab" data-tabs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false"  class="px-6">
+                <Tools/>
+            </button>
+        </ul>
+     </div>
+  </div>
