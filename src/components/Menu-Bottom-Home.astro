@@ -10,14 +10,17 @@ import Tools from "./icons/Tools.astro";
 
 
       <ul class="text-red-600 flex flex-wrap w-full text-sm  text-center justify-between gap-0" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-            <button  id="tools-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false"  class="px-6">
+            <button  id="tools-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false"  class="px-6 flex flex-col items-center">
                 <Sheild/>
+                <span class="text-sm md:text-lg">Security</span>
             </button>
-            <button  id="tools-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false"  class="px-6">
+            <button  id="tools-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false"  class="px-6 flex flex-col items-center">
                 <Globe/>
+                <span class="text-sm md:text-lg">Browsers</span>
             </button>
-            <button  id="tools-tab" data-tabs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false"  class="px-6">
+            <button  id="tools-tab" data-tabs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false"  class="px-6 flex flex-col items-center">
                 <Tools/>
+                <span class="text-sm md:text-lg">Tools</span>
             </button>
         </ul>
      </div>
