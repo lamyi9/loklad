@@ -32,62 +32,60 @@ const {Content} = await entry.render();
 const backgroundHero = `background-image : linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 98%), url('${entry.data.banner}')`;
 ---
 <AppLayout>
- 
-    <section  style={backgroundHero} class="bg-cover bg-center	bg-fixed">
-        <div class="mx-auto p-2 md:px-5  max-w-screen-xl w-full ">
-            <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg py-8 md:p-12 mb-8 mt-40">
-                <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
-                    
-                    <svg class="w-4 h-4 me-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                        <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
-                      </svg>
-                    {entry.data.category}
-                </a>
-               
-                <div class="flex justify-between items-center ">
-                  <div>
-                    <h1 class="text-white dark:text-white text-3xl md:text-5xl font-extrabold mb-2">{entry.data.title}</h1>
-                    <div class="flex gap-2 items-center">
-                     <p class="text-white">Available in </p>
-                     { entry.data.apk &&<Android color="white" />}
-                     { entry.data.windows &&<Windows color="white" /> }
-                     { entry.data.mac && <Apple color="white" /> }
-                   </div>
-                   <p class="text-white pb-5 font-bo leading-10 pr-10 ">{entry.data.summary}</p>
-                  </div>
-                  <img src={entry.data.thumbnail} alt="" class="rounded-xl w-32 h-32">
-                </div>
-
-                <br>
-                <div class="py-5 text-white grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  text-sm  backdrop-blur-lg  bg-slate-900/50 rounded-2xl">
-                    <div class="text-center p-3 border-slate-700  border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2  ">
-                       <p>Developer:</p>
-                        <p class="font-bold pt-2">{entry.data.author}</p>
-                    </div>
-                    <div class="text-center p-3 border-slate-700 border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2 ">
-                        <p>Website: </p>
-                         <p class="font-bold pt-2">{entry.data.website}</p>
-                     </div>
-                     <div class="text-center p-3 border-slate-700 border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2 ">
-                        <p>Country: </p>
-                         <p class="font-bold pt-2">{entry.data.country}</p>
-                     </div>
-                    
-                    <div class="flex text-center p-3 flex-col   ">
-                       <p class="pb-2">Rating:</p>
-                       <div class="flex justify-center ">
-                        <Star/>
-                        <p>{entry.data.rating}</p>
-                       </div>
-                    </div>
-                </div>
-                <buttom data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer w-auto sm:w-auto md:w-80 flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-brown hover:bg-brownDark focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-10">
-                    Download
-                  
-                </button>
+  <section  style={backgroundHero} class="bg-cover bg-center 	bg-fixed" transition:name={entry.data.title}>
+    <div class="mx-auto pt-20 md:px-5  max-w-screen-xl w-full flex p-5" >
+        <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg   mb-8 " >
+            <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"> 
+                <svg class="w-4 h-4 me-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
+                  </svg> 
+                {entry.data.category}
+            </a>
+            
+          <div class="flex justify-between items-center ">
+            <div>
+              <h1 class="text-white dark:text-white text-3xl md:text-5xl font-extrabold mb-2">{entry.data.title}</h1>
+              <div class="flex gap-2 items-center">
+               <p class="text-white">Available in </p>
+               { entry.data.apk &&<Android color="white" />}
+               { entry.data.windows &&<Windows color="white" /> }
+               { entry.data.mac && <Apple color="white" /> }
+             </div>
+             <p class="text-white pb-5 font-bo leading-10 pr-0 md:pr-10 lg:pr-10 ">{entry.data.summary}</p>
             </div>
+            <img src={entry.data.thumbnail} alt="" class="rounded-xl w-32 h-32 hidden md:block">
+          </div>
 
-    </section>
+            <br>
+            <div class="py-15 text-white grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  text-sm  backdrop-blur-lg  bg-slate-900/90 rounded-2xl" >
+                <div class="text-center p-3 border-slate-700  border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2  ">
+                   <p>Developer:</p>
+                    <p class="font-bold pt-2">{entry.data.author}</p>
+                </div>
+                <div class="text-center p-3 border-slate-700 border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2 ">
+                    <p>Website: </p>
+                     <p class="font-bold pt-2">{entry.data.website}</p>
+                 </div>
+                 <div class="text-center p-3 border-slate-700 border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2 ">
+                    <p>Country: </p>
+                     <p class="font-bold pt-2">{entry.data.country}</p>
+                 </div>
+                
+                <div class="flex text-center p-3 flex-col   ">
+                   <p class="pb-2">Rating:</p>
+                   <div class="flex justify-center ">
+                    <Star/>
+                    <p>{entry.data.rating}</p>
+                   </div>
+                </div>
+            </div>
+           
+            <buttom data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer w-auto sm:w-auto md:w-80 flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-brown hover:bg-brownDark focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-10" >
+                Download
+            </button>   
+        </div>
+
+</section>
     
 <section class="max-w-screen-xl mx-auto p-10">        
 <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
