@@ -3,8 +3,6 @@
 import '../styles/base.css';
 import Navbar from '../components/Navbar.astro'
 import Hero from '../components/Hero.astro'
-import Vpn from '../components/icons/network-vpn.astro'
-import Browser from '../components/icons/browser.astro'
 import Tools from '../components/icons/Tools.astro'
 import CardMd from '../components/CardMd.astro'
 import TopPicks from '../components/TopPicks.astro'
@@ -13,7 +11,6 @@ import TopPicksMac from '../components/TipPicksMac.astro'
 import { getCollection } from 'astro:content';
 import BaseLayout from '../Layouts/BaseLayout.astro';
 import TopPicksAndroid from '../components/TopPicksAndroid.astro';
-import Home from '../components/icons/Home.astro';
 import Sheild from '../components/icons/Sheild.astro';
 import Globe from '../components/icons/Globe.astro';
 import MenuBottomHome from '../components/Menu-Bottom-Home.astro';
@@ -26,25 +23,25 @@ const tools = await getCollection("tools");
 
     <Hero/>	
 
-    <div class="max-w-screen-xl mx-auto bg-white rounded-3xl  top-96 z-20 relative shadow-xl">  
+    <div class="max-w-screen-xl mx-auto bg-white/80 rounded-3xl mt-96   shadow-xl backdrop-blur-md ">  
         <div class="overflow-x-clip">
         <div class="max-w-screen-xl mx-auto ">
-            <div class="mb-4 border-b border-gray-200 ">
-                <ul class="flex flex-wrap  text-sm  text-center justify-center gap-0" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+            <div class="mb-4  ">
+                <ul class="flex flex-wrap  text-sm  text-center justify-center gap-0 " id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                     <li class="me-2" role="presentation">
-                        <button class="text-xl p-2 md:p-4 border-b-2 rounded-t-lg flex items-center gap-3 text-brown" id="apps-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false">
+                        <button class="text-xl p-2 md:p-4 border-b-2 rounded-t-lg flex items-center gap-3 " id="apps-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false">
                             <Sheild/>
                             <span class="text-sm md:text-lg">Security</span>
                         </button>
                     </li>
                     <li class="me-2" role="presentation">
-                        <button class="text-xl p-2 md:p-4 border-b-2 rounded-t-lg flex items-center gap-3 text-brown " id="browser-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false">
+                        <button class="text-xl p-2 md:p-4 border-b-2 rounded-t-lg flex items-center gap-3  " id="browser-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false">
                             <Globe/>
                             <span class="text-sm md:text-lg"> Browsers</span>
                         </button>
                     </li>
                     <li class="me-2" role="presentation">
-                        <button class="text-xl p-2 md:p-4 border-b-2 rounded-t-lg flex items-center gap-3 text-brown" id="tools-tab" data-tabs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false">
+                        <button class="text-xl p-2 md:p-4 border-b-2 rounded-t-lg flex items-center gap-3 " id="tools-tab" data-tabs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false">
                             <Tools/>
                             <span class="text-sm md:text-lg">Tools</span>
                         </button>
@@ -80,9 +77,11 @@ const tools = await getCollection("tools");
     <TopPicks/>
     <TopPicksAndroid/>
     <TopPicksMac/>
+
     </div>
 
 <MenuBottomHome/>
+
 </BaseLayout>
 
 

@@ -3,6 +3,9 @@ import ViewTransitions from "astro/components/ViewTransitions.astro";
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import TopPicks from "../components/TopPicks.astro";
+import TopPicksAndroid from "../components/TopPicksAndroid.astro";
 
 ---
 
@@ -11,10 +14,10 @@ import Navbar from "../components/Navbar.astro";
     <BaseHead/>
    
 </head>
-<body class="w-full">
+<body class="w-full bg-slate-300">
     <!-- <Navbar/> -->
+    <Hero/>	
     <slot/>
-</div>
 
 <Footer/>
 
