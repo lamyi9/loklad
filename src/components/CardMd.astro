@@ -4,15 +4,15 @@ const {title, category, rating, thumbnail, url} = Astro.props;
 ---
 
     <a href={url}>
-        <div class="group flex flex-col sm:flex-row md:flex-col bg-white  rounded-3xl my-6 w-full sm:w-5 md:w-36  text-slate-400 " transition:name={title}>
-            <div class="m-2.5 overflow-hidden rounded-3xl  flex justify-center items-center">
+        <div class="group flex flex-col sm:flex-row md:flex-col bg-gray-700  rounded-2xl my-6 w-full sm:w-5 md:w-36  text-slate-100 " transition:name={title}>
+            <div class="m-2.5 overflow-hidden rounded-2xl  flex justify-center items-center">
               <img class="w-full h-full object-cover" src={thumbnail} alt="profile-picture" />
             </div>
             <div class="pb-2">
-                <p class=" text-sm md:text-lg font-semibold px-3 text-slate-800 group-hover:text-slate-500 ">{title}</p>
-                <div class="flex justify-between px-3">
-                    <p class="text-sm ">{category}</p>
-                    <p class="flex  text-sm ">
+                <p class=" text-sm md:text-lg font-semibold px-3 text-slate-100 group-hover:text-slate-500 ">{title}</p>
+                <div class="flex justify-between px-4">
+                    <p class=" text-xs ">{category}</p>
+                    <p class="flex  text-xs pb-2 ">
                         <Star/><span class="px-1">{rating}</span>
                     </p>
                 </div>    

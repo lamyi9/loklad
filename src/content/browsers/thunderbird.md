@@ -14,3 +14,4 @@ apk: ''
 windows: https://s3.amazonaws.com/loklad.com/assets/files/win/Thunderbird%20Setup%20115.0.1.exe
 mac: https://s3.amazonaws.com/loklad.com/assets/files/mac/Thunderbird%20115.0.1.dmg
 ---
+tertrtrtjkrljgklfjgkldfjg
