@@ -30,6 +30,7 @@ const collectionAItems = mergedCollection.filter(item => item.data.mac);
               <CardSm 
                 title={item.data.title} 
                 rating={item.data.rating} 
+                category={item.data.category} 
                 url={`${item.data.collection}/${item.slug}`} 
                 thumbnail ={item.data.thumbnail}
               />

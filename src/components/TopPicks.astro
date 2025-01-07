@@ -23,7 +23,6 @@ const collectionAItems = mergedCollection.filter(item => item.data.windows);
         <!-- {collectionAItems.map((item) => (
             <CardSm title={item.data.title} rating={item.data.rating} url={`${item.data.collection}/${item.slug}`}/>
           ))} -->
-
           {collectionAItems
             .filter((item) => item.data.rating > 4.3)
             .sort(() => Math.random() - 1) // Randomize the order of items
@@ -31,6 +30,7 @@ const collectionAItems = mergedCollection.filter(item => item.data.windows);
               <CardSm 
                 title={item.data.title} 
                 rating={item.data.rating} 
+                category ={item.data.category}
                 url={`${item.data.collection}/${item.slug}`} 
                 thumbnail ={item.data.thumbnail}
               />
