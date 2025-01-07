@@ -14,12 +14,13 @@ import TopPicksAndroid from "../components/TopPicksAndroid.astro";
     <BaseHead/>
    
 </head>
-<body class="w-full bg-gray-900 ">
+<body class="w-full bg-gray-900 relative ">
+
     <!-- <Navbar/> -->
-    <Hero/>	
+    
+   
     <slot/>
-
-<Footer/>
-
+ <img src="LOKLAD.svg" alt="logo" class="fixed bottom-0 -z-0 blur-3xl opacity-15 animate-pulse ">
+    <Footer/>
 </body>
 </html>
