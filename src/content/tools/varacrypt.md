@@ -1,4 +1,5 @@
 ---
+
 title: VeraCrypt
 category:  Toolkid
 collection: tools
@@ -13,4 +14,5 @@ windows: https://s3.amazonaws.com/loklad.com/assets/files/win/VeraCrypt%20Setup%
 apple:  https://s3.amazonaws.com/loklad.com/assets/files/mac/VeraCrypt_1.25.9.dmg
 
 ---
+
 Veracrypt is a disk encryption tool for Windows, Mac OS, and Linux. You can use it to create a virtual encrypted disk, encrypt an entire partition, or encrypt your operating system so that no one will be able to access any of your files without the right authentication.

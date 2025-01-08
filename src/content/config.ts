@@ -4,12 +4,12 @@ import { z, defineCollection } from "astro:content";
 const appsCollection = defineCollection({
     type: 'content', 
 // Define the schema 
-    schema: z.object({
+    schema:({image})=> z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string().optional(),
-        banner: z.string().optional(), //Image can be optional
-        thumbnail: z.string(),
+        banner: image().optional(), //Image can be optional
+        thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
         collection: z.string().url(),
@@ -25,12 +25,12 @@ const appsCollection = defineCollection({
 const browserCollection = defineCollection({
     type: 'content', 
 // Define the schema 
-    schema: z.object({
+    schema: ({image})=> z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string(),
-        banner: z.string().optional(), //Image can be optional
-        thumbnail: z.string(),
+        banner: image().optional(), //Image can be optional
+        thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
         collection: z.string().url(),
@@ -46,12 +46,12 @@ const browserCollection = defineCollection({
 const toolsCollection = defineCollection({
     type: 'content', 
 // Define the schema 
-    schema: z.object({
+    schema:({image})=> z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string(),
-        banner: z.string().optional(), //Image can be optional
-        thumbnail: z.string(),
+        banner: image().optional(), //Image can be optional
+        thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
         collection: z.string().url(),
@@ -61,6 +61,8 @@ const toolsCollection = defineCollection({
         windows: z.string().url().optional(),
         apple: z.string().url().optional(),
     }),
+    
+
 });
 // Export
 

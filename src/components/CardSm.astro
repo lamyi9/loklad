@@ -1,11 +1,13 @@
 ---
 import Star from '../components/icons/star.astro'
  const {title,rating,url,thumbnail,category} = Astro.props;
+ import Image from 'astro/components/Image.astro';
 ---
 <a href={url}>
     <div class="group flex w-full max-w-80 rounded-2xl shadow-slate-400 shadow-sm items-start   bg-gray-700 hover:shadow-slate-500 ">
         <div class="m-2.5 overflow-hidden rounded-2xl w-28  ">
-            <img class="w-60 object-cover" src={thumbnail} alt="profile-picture" />
+            
+            <Image src={thumbnail} alt="profile-picture" width={240} height={240}/>
         </div>
         <div class="w-full m-2.5 flex flex-col justify-center text-white  ">
             <p class="text-md font-semibold pt-3 text-gray-100 group-hover:text-gray-300">{title}</p>
