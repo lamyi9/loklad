@@ -8,10 +8,7 @@ import Apple from '../../components/icons/apple.astro'
 import Android from '../../components/icons/android.astro'
 import Windows from '../../components/icons/windows.astro'
 
-
 import { getCollection } from "astro:content";
-
-import MenuBottomSingle from '../../components/Menu-Bottom-Single.astro';
 import DownloadModal from '../../components/DownloadModal.astro';
 import AppContent from '../../components/AppContent.astro';
 import VideoPlayer from '../../components/VideoPlayer.astro';
@@ -108,35 +105,36 @@ const backgroundHero = `background-image : linear-gradient(0deg, rgba(0,0,0,1) 0
       } 
 </AppContent>
 
-    <DownloadModal>
-      { entry.data.apk &&
-        <div class="flex flex-col p-2  w-full justify-center bg-green-500 hover:bg-green-400 items-center">
-        
-        <a href={entry.data.apk} data-modal-hide="popup-modal" type="button" class="text-slate-700 h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
-            <Android color="white" /> <span class="px-2 text-lg font-bold text-white">Android</span>
-        </a>
-        <p class="text-xs pb-3 text-white">Version: 203</p>
-    </div>
-    }
-    { entry.data.windows &&
-        <div class="flex flex-col p-2  w-full justify-center bg-blue-600 hover:bg-blue-700 items-center">
-       
-       <a href={entry.data.windows} data-modal-hide="popup-modal" type="button" class="text-slate-700  h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
-           <Windows color="white"/>  <span class="px-2 text-lg font-bold text-white">Windows</span>
-         </a>
-         <p class="text-xs pb-3 text-white">Version: 203</p>
-    </div>
-    }
-    {
-        entry.data.mac &&
-        <div class="flex flex-col p-2  w-full justify-center bg-gray-500 hover:bg-gray-600 items-center">
-       
-       <a href={entry.data.mac} data-modal-hide="popup-modal" type="button" class="text-slate-700 h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
-           <Apple color="white"/> <span class="px-2 text-lg font-bold text-white">Mac</span>
-         </a>
-         <p class="text-xs pb-3 text-white">Version: 203</p>
-    </div>
-    }
-    </DownloadModal>
-    <MenuBottomSingle/>
+<DownloadModal>
+  { entry.data.apk &&
+    <div class="flex flex-col p-2  w-full justify-center bg-green-500 hover:bg-green-400 items-center">
+    
+    <a href={entry.data.apk} data-modal-hide="popup-modal" type="button" class="text-slate-700 h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
+        <Android color="white" /> <span class="px-2 text-lg font-bold text-white">Android</span>
+    </a>
+    <p class="text-xs pb-3 text-white">Version: 203</p>
+</div>
+}
+{ entry.data.windows &&
+    <div class="flex flex-col p-2  w-full justify-center bg-blue-600 hover:bg-blue-700 items-center">
+    
+    <a href={entry.data.windows} data-modal-hide="popup-modal" type="button" class="text-slate-700  h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
+        <Windows color="white"/>  <span class="px-2 text-lg font-bold text-white">Windows</span>
+      </a>
+      <p class="text-xs pb-3 text-white">Version: 203</p>
+</div>
+}
+{
+    entry.data.mac &&
+    <div class="flex flex-col p-2  w-full justify-center bg-gray-500 hover:bg-gray-600 items-center">
+    
+    <a href={entry.data.mac} data-modal-hide="popup-modal" type="button" class="text-slate-700 h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
+        <Apple color="white"/> <span class="px-2 text-lg font-bold text-white">Mac</span>
+      </a>
+      <p class="text-xs pb-3 text-white">Version: 203</p>
+</div>
+}
+</DownloadModal>
+
+
 </AppLayout>
