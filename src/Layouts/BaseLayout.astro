@@ -7,12 +7,14 @@ import Hero from "../components/Hero.astro";
 import TopPicks from "../components/TopPicks.astro";
 import TopPicksAndroid from "../components/TopPicksAndroid.astro";
 
+const {title,description,image,url,type} = Astro.props;
+
 ---
 
 <html lang="en">
 <head>
     <ViewTransitions />
-    <BaseHead/>
+    <BaseHead {title} {description} {image} {url} {url}/>
    
 </head>
 <body class="w-full bg-gray-900 relative ">
