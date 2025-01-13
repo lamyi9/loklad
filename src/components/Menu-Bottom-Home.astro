@@ -1,9 +1,8 @@
 ---
 import Globe from "./icons/Globe.astro";
-import Home from "./icons/Home.astro";
-import Sheild from "./icons/Sheild.astro";
 import Tools from "./icons/Tools.astro";
-import Home from "./icons/Home.astro";
+import List from './icons/list.astro'
+import Trophy from "./icons/trophy.astro";
 ---
 
 <div class="flex justify-center w-screen-sm relative z-10">
@@ -13,18 +12,22 @@ import Home from "./icons/Home.astro";
         class="-z-0 absolute -inset-1 bg-gradient-to-r from-red-600 to-violet-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
         </div>   
         <ul class="text-red-600 flex flex-wrap w-full text-sm  text-center justify-between gap-0 z-10 bg-gray-900 py-2 px-5 rounded-3xl items-center border-2 border-orange-200" id="default-tab " data-tabs-toggle="#default-tab-content" role="tablist">
-            <!-- <a  class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300" href="#app-category">
-                <Home/>
-                <span class="text-xs md:text-sm">Home</span>
-            </a> -->
-            <button  id="tools-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false"  class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300">
+            <a class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300" href="#app-category">
+                <List/>
+                <span class="text-xs md:text-sm">Apps</span>
+            </a>
+            <a class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300" href="#top-windows">
+                <Trophy/>
+                <span class="text-xs md:text-sm">Top Pics</span>
+            </a>
+            <!-- <button  id="tools-tab" data-tabs-target="#apps" type="button" role="tab" aria-controls="apps" aria-selected="false"  class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300">
                 <Sheild/>
                 <span class="text-xs md:text-sm">Security</span>
-            </button>
-            <button  id="tools-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false"  class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300">
+            </button> -->
+            <!-- <button  id="tools-tab" data-tabs-target="#browser" type="button" role="tab" aria-controls="browser" aria-selected="false"  class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300">
                 <Globe/>
                 <span class="text-xs md:text-sm ">Browsers</span>
-            </button>
+            </button> -->
             <button  id="tools-tab" data-tabs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false"  class="px-6 flex flex-col items-center focus:text-green-400 text-orange-400 hover:text-orange-300">
                 <Tools/>
                 <span class="text-xs md:text-sm">Tools</span>
