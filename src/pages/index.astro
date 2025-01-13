@@ -64,7 +64,7 @@ const {
                 </ul>
             </div>
                 <div id="default-tab-content" >
-                    <div class=" py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-0 md:gap-3 p-1 " id="apps" role="tabpanel" aria-labelledby="apps-tab">
+                    <div class=" py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-3 md:gap-3 p-1 " id="apps" role="tabpanel" aria-labelledby="apps-tab">
                     {
                         apps.map((app)=>(
                         <CardMd title={app.data.title} category={app.data.category} rating={app.data.rating} thumbnail={app.data.thumbnail} url={`/apps/${app.slug}`}/>
@@ -72,21 +72,21 @@ const {
                     }
                     </div>
                 </div>
-                <div class="py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-0 md:gap-3 p-1" id="browser" role="tabpanel" aria-labelledby="dashboard-tab">
+                <div class="py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-3 md:gap-3 p-1" id="browser" role="tabpanel" aria-labelledby="dashboard-tab">
                     {
                         browsers.map((browser)=>(
                         <CardMd title={browser.data.title} category={browser.data.category} rating={browser.data.rating} thumbnail={browser.data.thumbnail} url={`/browsers/${browser.slug}`}/>
                         ))
                     }
                 </div>
-                <div class=" py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-0 md:gap-3 p-1" id="communication" role="tabpanel" aria-labelledby="communication-tab">
+                <div class=" py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-3 md:gap-3 p-1" id="communication" role="tabpanel" aria-labelledby="communication-tab">
                     {
                         communication.map((communication)=>(
                         <CardMd title={communication.data.title} category={communication.data.category} rating={communication.data.rating} thumbnail={communication.data.thumbnail} url={`/communication/${communication.slug}`}/>
                         ))
                     }
                 </div>
-                <div class=" py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-0 md:gap-3 p-1" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+                <div class=" py-4 md:px-4 rounded-xl  dark:bg-gray-800 grid  grid-cols-3 md:grid-cols-6 lg:grid-cols-7 gap-3 md:gap-3 p-1" id="tools" role="tabpanel" aria-labelledby="tools-tab">
                     {
                         tools.map((tools)=>(
                         <CardMd title={tools.data.title} category={tools.data.category} rating={tools.data.rating} thumbnail={tools.data.thumbnail} url={`/tools/${tools.slug}`}/>
