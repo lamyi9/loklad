@@ -31,7 +31,7 @@ const backgroundHero = `background-image : linear-gradient(0deg, rgba(0,0,0,1) 0
   <section  style={backgroundHero} class="bg-cover bg-center 	bg-fixed" transition:name={entry.data.title}>
     <div class="mx-auto pt-20 md:px-5  max-w-screen-xl w-full flex p-5" >
         <div class=" dark:bg-gray-800  dark:border-gray-700 rounded-lg   mb-8 " >
-            <a href="#" class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"> 
+            <a href="#" class="bg-blue-100 text-blue-800 text-sm font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2 font-bo"> 
                 <svg class="w-4 h-4 me-1.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                     <path fill-rule="evenodd" d="M5.25 2.25a3 3 0 0 0-3 3v4.318a3 3 0 0 0 .879 2.121l9.58 9.581c.92.92 2.39 1.186 3.548.428a18.849 18.849 0 0 0 5.441-5.44c.758-1.16.492-2.629-.428-3.548l-9.58-9.581a3 3 0 0 0-2.122-.879H5.25ZM6.375 7.5a1.125 1.125 0 1 0 0-2.25 1.125 1.125 0 0 0 0 2.25Z" clip-rule="evenodd" />
                   </svg> 
@@ -47,11 +47,10 @@ const backgroundHero = `background-image : linear-gradient(0deg, rgba(0,0,0,1) 0
                    { entry.data.windows &&<Windows color="#0ea5e9" /> }
                    { entry.data.mac && <Apple color="#9ca3af" /> }
              </div>
-             <p class="text-white pb-5 font-bo md:leading-6 pr-0 md:pr-10 lg:pr-10 ">{entry.data.summary}</p>
+             <p class="text-white py-5 font-bo md:leading-6 pr-0 md:pr-10 lg:pr-10 ">{entry.data.summary}</p>
             </div>
             <img src={entry.data.thumbnail} alt="" class="rounded-xl w-32 h-32 hidden md:block">
           </div>
-
             <br>
             <div class="py-15 text-white grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  text-sm  backdrop-blur-lg  bg-slate-900/90 rounded-2xl" >
                 <div class="text-center p-3 border-slate-700  border-r-0 sm:border-r-0 md:border-r-2 lg:border-r-2  ">

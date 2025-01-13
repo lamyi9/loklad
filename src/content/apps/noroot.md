@@ -2,7 +2,7 @@
 title: 'Noroot'
 category:  Firewall
 collection: apps
-summary: 'glasswire is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits, and WiFi network activity. Instantly see what apps are slowing your phone’s Internet connection or wasting your mobile data.'
+summary: 'ཁ་པར་ནང་གི་བཀོལ་ཆས་ཤིག་གིས་དྲ་རྒྱ་བཀོལ་སྤྱོད་བྱེད་དུས། NoRoot Firewall་མཉེན་ཆས་ཀྱིས་ཁྱེད་ལ་བརྡ་ལན་གཏོང་བ་དང་། ཁ་པར་ནང་གི་ཕར་འགྲོ་ཚུར་འོང་གི་གཞི་གྲངས་ལ་ལྟ་རྟོག་བྱས་ཏེ། མཉེན་ཆས་བྱེ་བྲག་པ་ཞིག་ལ་དྲ་རྒྱ་བཀོལ་དུ་འཇུག་མིན་སྟངས་འཛིན་བྱེད་ཐུབ། '
 banner: '/images/banner-noroot.jpg'
 thumbnail: '/images/noroot-thumbnail.png'
 author: 'Grey Shirts'
@@ -12,6 +12,9 @@ rating: 4.3
 apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/NoRootFirewall.apk
 
 ---
+
+ཁ་པར་ནང་གི་བཀོལ་ཆས་ཤིག་གིས་དྲ་རྒྱ་བཀོལ་སྤྱོད་བྱེད་དུས། NoRoot Firewall་མཉེན་ཆས་ཀྱིས་ཁྱེད་ལ་བརྡ་ལན་གཏོང་བ་དང་། ཁ་པར་ནང་གི་ཕར་འགྲོ་ཚུར་འོང་གི་གཞི་གྲངས་ལ་ལྟ་རྟོག་བྱས་ཏེ། མཉེན་ཆས་བྱེ་བྲག་པ་ཞིག་ལ་དྲ་རྒྱ་བཀོལ་དུ་འཇུག་མིན་སྟངས་འཛིན་བྱེད་ཐུབ། 
+
 Firewall WITHOUT ROOT. Host name/domain name filtering, simple interface, fine-grained access control and no suspicious permissions on the firewall app itself.
 
 ### Key features

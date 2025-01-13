@@ -4,7 +4,7 @@ thumbnail: /images/thumbnail-freebrowser.png
 banner: /images/banner-freebrowser.png
 category: Browser
 collection: browsers
-summary: FreeBrowser lets you access Facebook, Twitter and other blocked or inaccessible websites without the need to configure a VPN or proxy.
+summary: 'རིན་མེད་བཤེར་ཆས་(Free browser)བཀོལ་ན། ཁ་པར་ནང་སྒྲིག་འགོད་སོགས་གང་ཡང་བྱེད་མ་དགོས་པའི་ཐོག་ནས་ངོ་དེབ་དང་། X་སོགས་འཛམ་གླིང་གི་གྲགས་ཆེ་བའི་སྤྱི་ཚོགས་འབྲེལ་མཐུད་དྲ་བ་སོགས་བཀོལ་སྤྱོད་བྱེད་ཐུབ། ཁ་པར་ནང་གི་སྒྲིག་འགོད་འགྱུར་བ་གཏོང་མི་དགོས་ཤིང་། ཐོ་འགོད་སོགས་བྱེད་མི་དགོས་པ་མ་ཟད། འཛམ་གླིང་གང་ས་ནས་རིན་མེད་ཐོག་བཀོལ་སྤྱོད་བྱེད་ཆོག'
 author: Greatfire
 website: https://freebrowser.org
 country: USA

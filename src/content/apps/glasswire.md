@@ -2,7 +2,7 @@
 title: 'Glasswire'
 category:  VPN
 collection: apps
-summary: 'glasswire is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits, and WiFi network activity. Instantly see what apps are slowing your phone’s Internet connection or wasting your mobile data.'
+summary: 'ཤེལ་སྐུད(Glass wire) མཉེན་ཆས་འདིས་ཁྱེད་ཀྱི་ཁ་པར་ནང་གི་དྲ་རྒྱ་བཀོལ་སྤྱོད་ཀྱི་གནས་སྟངས་དང་། དྲ་རྒྱའི་ཚད་བཀག ་སྐུད་མེད་དྲ་བའི་བྱེད་སྒོ་ཡོངས་རྫོགས་ལ་ལྟ་རྟོག་བྱེད་དུ་འཇུག་པ་དང་། ཁ་པར་ནང་གི་མཉེན་ཆས་གང་དག་གིས་ཁྱེད་ཀྱི་དྲ་བའི་མྱུར་ཚད་ཇེ་དལ་དུ་གཏོང་གི་ཡོད་མེད་དང་། དྲ་རྒྱ་འཕྲོ་བརླག་ཏུ་གཏོང་གི་ཡོད་མེད་སོགས་ལྟ་ཐུབ།'
 banner: '/images/glasswire-banner.webp'
 thumbnail: '/images/glasswire-thumbnail.jpg'
 author: 'SecureMix LLC'
