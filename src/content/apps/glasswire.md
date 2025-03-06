@@ -9,7 +9,10 @@ author: 'SecureMix LLC'
 website: 'www.glasswire.com'
 country: 'Austin, TX 78701 USA'
 rating: 4.3
-apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/GlassWire.apk
+
+windows: https://loklad.s3.us-east-1.amazonaws.com/windows/psiphon3.exe
+win_version: 3.4.768
+
 
 ---
 Glasswire is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits, and WiFi network activity. Instantly see what apps are slowing your phone’s Internet connection or wasting your mobile data.

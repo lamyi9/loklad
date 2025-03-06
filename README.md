@@ -45,3 +45,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+### Tools Source
+
+Psiphon: [Psiphon](https://s3.amazonaws.com/psiphon/web/mjr4-p23r-puwl/en/download.html#direct)  
+Lanter: [Android](https://lantern.io/download?os=android) [Mac](https://lantern.io/download?os=mac) [Window](https://lantern.io/download?os=windows) [github](https://github.com/getlantern/lantern)
