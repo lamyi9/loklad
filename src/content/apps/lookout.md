@@ -9,7 +9,8 @@ author: 'Lookout Mobile Security'
 website: 'lookout.com'
 country: 'United State'
 rating: 4.3
-apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/Lookout.apk
+apk:  https://loklad.s3.us-east-1.amazonaws.com/apk/Lookout.apk
+apk_version: 10.43.1
 
 ---
 lookout is the ultimate data usage monitor for Android! Our app makes it easy to monitor your mobile data usage, data limits, and WiFi network activity. Instantly see what apps are slowing your phone’s Internet connection or wasting your mobile data.

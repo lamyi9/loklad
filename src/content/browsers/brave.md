@@ -10,9 +10,12 @@ author: 'Brendan Eich'
 website: 'https://brave.com'
 country: 'ཨ་རི།'
 rating: 4.3
-apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/Brave.apk
-windows:  https://s3.amazonaws.com/loklad.com/assets/files/win/BraveBrowserSetup.exe
-mac:  https://s3.amazonaws.com/loklad.com/assets/files/mac/Brave-Browser.dmg
+apk:  https://loklad.s3.us-east-1.amazonaws.com/apk/Bravearm64Universal.apk
+apk_version: 1.78.25
+windows:  https://loklad.s3.us-east-1.amazonaws.com/windows/BraveBrowserSetup-BRV010.exe
+win_version: 1.76.73
+mac:  https://loklad.s3.us-east-1.amazonaws.com/mac/Brave-Browser.dmg
+mac_version: 1.76.73
 
 ---
 སེང་གདོང (Brave) དྲ་རྒྱ་བཤེར་ཆས་འདིས། ཁྱེད་རང་དྲ་མྱུལ་བྱེད་པའི་སྐབས་སུ་འགེབས་སྲུང་བྱས་ཏེ། དྲ་ཐོག་གི་རྗེས་འདེད་རིགས་བྱེད་མི་ཐུབ་པ་བཟོ་ཡི་ཡོད་པ་མ་ཟད། འཚོལ་བཤེར་གྱི་མྱུར་ཚད་མགྱོགས་སུ་གཏོང་གི་ཡོད།
