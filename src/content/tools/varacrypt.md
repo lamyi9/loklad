@@ -10,8 +10,9 @@ author: 'IDRIX'
 website: 'https://www.veracrypt'
 country: 'France'
 rating: 4.6
-windows: https://s3.amazonaws.com/loklad.com/assets/files/win/VeraCrypt%20Setup%201.25.9.exe
-apple:  https://s3.amazonaws.com/loklad.com/assets/files/mac/VeraCrypt_1.25.9.dmg
-
+windows: https://loklad.s3.us-east-1.amazonaws.com/windows/VeraCrypt+Setup+1.26.20.exe
+win_version: 1.26.20
+mac: https://loklad.s3.us-east-1.amazonaws.com/mac/VeraCrypt_1.26.20.dmg
+mac_version: 1.26.20
 ---
 Veracrypt is a disk encryption tool for Windows, Mac OS, and Linux. You can use it to create a virtual encrypted disk, encrypt an entire partition, or encrypt your operating system so that no one will be able to access any of your files without the right authentication.

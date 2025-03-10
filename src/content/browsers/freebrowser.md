@@ -9,9 +9,16 @@ author: Greatfire
 website: https://freebrowser.org
 country: USA
 rating: 4.6
-win: 
-mac:  
 video: https://s3.amazonaws.com/loklad.com/assets/videos/psiphon%20for%20android-.mp4
+
+apk: https://loklad.s3.us-east-1.amazonaws.com/apk/freebrowser-6.0.9.apk
+apk_version: 6.0.9
+windows: https://loklad.s3.us-east-1.amazonaws.com/windows/freebrowser-6.0.6.exe
+win_version: 6.0.6
+mac:  https://loklad.s3.us-east-1.amazonaws.com/mac/freebrowser-6.0.6.zip
+mac_version: 6.0.6
+
+
 ---
 
 FreeBrowser lets you access Facebook, Twitter and other blocked or inaccessible websites without the need to configure a VPN or proxy. No registration is required to use FreeBrowser. No setup is necessary. FreeBrowser users do not have to sign up and they do not have to change any settings on their phones. The app is made available to users everywhere in the world for free, with no data usage restrictions. FreeBrowser was the fastest free circumvention tool in China in 2016 based on tests conducted on the Circumvention Central platform. The app circumvents all restrictive firewalls, at work, home and school. FreeBrowser is based on the same source code that Google Chrome is built on. Some of the advantages of FreeBrowser

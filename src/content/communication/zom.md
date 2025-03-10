@@ -9,7 +9,8 @@ author: 'Zom Communication'
 website: 'zom.im'
 country: 'United State'
 rating: 4.7
-apk:  https://s3.amazonaws.com/loklad.com/assets/files/apk/zom.apk
+apk:  https://loklad.s3.us-east-1.amazonaws.com/apk/zom.apk
+apk_version: 3.0.9-RC-2
 
 ---
 འཛོམས་(Zom) ནི་བོད་དང་ཧི་མ་ལ་ཡའི་རིག་གཞུང་དགའ་མོས་བྱེད་མཁན་གྱི་འཕྲུལ་རིག་ཆེད་མཁས་པ་ཁག་ཅིག་གིས་བཟོས་པའི་མ་ལག་ཅིག་ཡིན་ལ། མཉེན་ཆས་འདིའི་ནང་དུ་སྣེ་གཉིས་བར་གྱི་གསང་སྡོམ་མཁོ་སྤྲོད་བྱེད་ཀྱི་ཡོད་པས། མི་སྒེར་གྱི་གསང་རྒྱ་དང་བདེ་འཇགས་ལ་ཁེ་ཕན་ཆེ། 

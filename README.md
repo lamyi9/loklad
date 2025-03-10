@@ -49,5 +49,12 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ### Tools Source
 
 Psiphon: [Psiphon](https://s3.amazonaws.com/psiphon/web/mjr4-p23r-puwl/en/download.html#direct)  
-Lanter: [Android](https://lantern.io/download?os=android) [Mac](https://lantern.io/download?os=mac) [Window](https://lantern.io/download?os=windows) [github](https://github.com/getlantern/lantern)
-brave: [apk](https://github.com/brave/brave-browser/releases)
+Lanter: [Android](https://lantern.io/download?os=android) [Mac](https://lantern.io/download?os=mac) [Window](https://lantern.io/download?os=windows) [github](https://github.com/getlantern/lantern)  
+brave: [apk](https://github.com/brave/brave-browser/releases)  
+firefox: [Desktop](https://www.mozilla.org/en-US/firefox/all/desktop-release/)  
+FreeBrowser: [download](https://freebrowser.org/#stepSection)  
+Orbot: [apk](https://orbot.app/en/download/)  
+thunderbord : [Desktop](https://www.thunderbird.net/en-US/thunderbird/all/) [Android](https://f-droid.org/packages/net.thunderbird.android/)  
+tor Browser: [APK, Mac, Wind](https://www.torproject.org/download/)  
+
+signal: [apk](https://signal.org/android/apk/) [desktop](https://signal.org/download/)  
