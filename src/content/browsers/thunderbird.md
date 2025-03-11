@@ -9,7 +9,7 @@ author: Mozilla, US
 website: https://www.thunderbird.net
 country: USA
 
-rating: 4.6
+rating: 4.1
 apk: 'https://loklad.s3.us-east-1.amazonaws.com/apk/net.thunderbird.android_8.apk'
 apk_version: 8.2
 windows: https://loklad.s3.us-east-1.amazonaws.com/windows/Thunderbird+Setup+136.0.exe

@@ -8,7 +8,7 @@ thumbnail: '/images/noroot-thumbnail.png'
 author: 'Grey Shirts'
 website: 'https://norootfirewall.weebly.com/'
 country: 'xxxxx'
-rating: 4.3
+rating: 4.2
 apk:  https://loklad.s3.us-east-1.amazonaws.com/apk/NoRootFirewall.apk
 apk_version: 4.0.2
 

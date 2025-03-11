@@ -4,9 +4,10 @@ import { getCollection } from 'astro:content';
 const apps = await getCollection("apps");
 const browsers = await getCollection("browsers");
 const tools = await getCollection("tools");
+const communications = await getCollection("communication");
 import Android from "./icons/android.astro";
 
-const collections = [apps, browsers, tools]
+const collections = [apps, browsers, tools,communications]
 
 const mergedCollection = collections.flat();
 
