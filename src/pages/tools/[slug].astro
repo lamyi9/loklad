@@ -44,9 +44,9 @@ const backgroundHero = `background-image : linear-gradient(0deg, rgba(0,0,0,1) 0
               <h1 class="text-white dark:text-white text-3xl md:text-5xl font-extrabold mb-2">{entry.data.title}</h1>
               <div class="flex gap-2 items-center">
                 <p class="text-gray-300"> </p>
-                   { entry.data.apk &&<Android color="#22c55e" />}
-                   { entry.data.windows &&<Windows color="#0ea5e9" /> }
-                   { entry.data.mac && <Apple color="#9ca3af" /> }
+                { entry.data.apk &&<Android color="#22c55e" size="w-5"/>}
+                { entry.data.windows &&<Windows color="#0ea5e9" size="w-5"/> }
+                { entry.data.mac && <Apple color="#9ca3af" size="w-5"/> }
              </div>
              <p class="text-white py-5 font-bo md:leading-6 pr-0 md:pr-10 lg:pr-10 ">{entry.data.summary}</p>
             </div>

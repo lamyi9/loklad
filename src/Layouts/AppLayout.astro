@@ -1,7 +1,6 @@
 ---
 import '../styles/base.css';
 import Navbar from '../components/Navbar.astro'
-import { ViewTransitions } from 'astro:transitions';
 
 import Footer from '../components/Footer.astro'
 import BaseHead from '../components/BaseHead.astro'
@@ -14,7 +13,7 @@ const {title,description,image,url,type} = Astro.props;
 <html lang="en">
 <head>
     <BaseHead {title} {description} {image} {url} {url}/>
-    <!-- <ViewTransitions /> -->
+
 </head>
 <body class="w-full flex flex-col justify-center bg-gray-900 relative">
     <img src="/LOKLAD.svg" alt="logo" class="fixed bottom-0 -z-0 blur-3xl opacity-15 animate-pulse ">
