@@ -74,9 +74,39 @@ const backgroundHero = `background-image : linear-gradient(0deg, rgba(0,0,0,1) 0
              </div>
              </div>
            
-            <buttom data-modal-target="popup-modal" data-modal-toggle="popup-modal" class="cursor-pointer w-auto sm:w-auto md:w-80 flex justify-center items-center p-3  text-2xl text-center text-gray-100 rounded-lg bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 my-10 font-bo" >
-              ཕབ་ལེན་གནང་རོགས།
-          </button>   
+             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 py-10 ">
+              { entry.data.apk &&
+              <a href={entry.data.apk} data-modal-hide="popup-modal" type="button" class="">
+                <div class="flex flex-col p-2  w-full justify-center bg-green-500 hover:bg-green-400 items-center rounded-lg">
+                    <div class="text-slate-700 h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
+                      <Android color="white" size="w-8"/> <span class="px-2 text-lg font-bold text-white">Android</span> 
+                    </div>
+                    <p class="text-xs pb-3 text-white">Version : {entry.data.apk_version}</p>
+                 </div>
+                </a>
+              }
+              { entry.data.windows &&
+              <a href={entry.data.windows} data-modal-hide="popup-modal" type="button" >
+                <div class="flex flex-col p-2  w-full justify-center bg-blue-600 hover:bg-blue-700 items-center rounded-lg">
+                 <div class="text-slate-700  h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
+                  <Windows color="white" size="w-8"/>  <span class="px-2 text-lg font-bold text-white">Windows</span>
+                  </div>   
+                  <p class="text-xs pb-3 text-white">Version : {entry.data.win_version}</p>
+                 </div>
+                 </a>
+             }
+              {
+                entry.data.mac &&
+                <a href={entry.data.mac} data-modal-hide="popup-modal" type="button" >
+                <div class="flex flex-col p-2  w-full justify-center bg-gray-500 hover:bg-gray-600 items-center rounded-lg">
+                 <div class="text-slate-700  h-10 text-sm inline-flex items-center px-5 py-2.5 text-center">
+                  <Apple color="white" size="w-8"/>  <span class="px-2 text-lg font-bold text-white">Apple Mac</span>
+                  </div>   
+                  <p class="text-xs pb-3 text-white">Version : {entry.data.mac_version}</p>
+                 </div>
+                 </a>
+              }
+            </div>
         </div>
 
 </section>
