@@ -57,4 +57,5 @@ Orbot: [apk](https://orbot.app/en/download/)
 thunderbord : [Desktop](https://www.thunderbird.net/en-US/thunderbird/all/) [Android](https://f-droid.org/packages/net.thunderbird.android/)  
 tor Browser: [APK, Mac, Wind](https://www.torproject.org/download/)  
 
-signal: [apk](https://signal.org/android/apk/) [desktop](https://signal.org/download/)  
+signal: [apk](https://signal.org/android/apk/) [desktop](https://signal.org/download/)
+Telegram: [apk](https://telegram.org/android)
