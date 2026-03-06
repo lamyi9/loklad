@@ -10,8 +10,8 @@ website: 'www.glasswire.com'
 country: 'Austin, TX 78701 USA'
 rating: 4.3
 
-windows: https://loklad.s3.us-east-1.amazonaws.com/windows/psiphon3.exe
-win_version: 3.4.768
+windows: https://loklad.s3.us-east-1.amazonaws.com/windows/GlassWireSetup.exe
+win_version: 3.8.1033
 
 
 ---

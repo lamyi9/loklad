@@ -9,11 +9,10 @@ author: The Tor Project
 website: https://www.torproject.org
 country: USA
 rating: 4.4
-apk:  https://loklad.s3.us-east-1.amazonaws.com/apk/tor-browser-android-aarch64-14.0.7.apk
-apk_version: 14.0.6
-windows: https://loklad.s3.us-east-1.amazonaws.com/windows/tor-browser-windows-x86_64-portable-14.0.7.exe
-win_version: 14.0.7
-mac: https://loklad.s3.us-east-1.amazonaws.com/mac/tor-browser-macos-14.0.7.dmg
-mac_version: 14.0.7
-
+apk:  https://loklad.s3.us-east-1.amazonaws.com/apk/tor-browser-android-aarch64-15.0.7.apk
+apk_version: 15.0.7
+windows: https://loklad.s3.us-east-1.amazonaws.com/windows/tor-browser-windows-x86_64-portable-15.0.7.exe
+win_version: 15.0.7
+mac: https://loklad.s3.us-east-1.amazonaws.com/mac/tor-browser-macos-15.0.7.dmg
+mac_version: 15.0.7
 ---
