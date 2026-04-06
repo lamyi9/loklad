@@ -10,7 +10,7 @@ website: "https://protonvpn.com/"
 country: "Switzerland"
 rating: 4.4
 apk: https://loklad.s3.us-east-1.amazonaws.com/apk/ProtonVPN.apk
-apk_version: "-"
+apk_version: "5.17.21.0"
 windows: https://loklad.s3.us-east-1.amazonaws.com/windows/ProtonVPN_v4.3.13_x64.exe
 win_version: 4.3.13
 mac: https://loklad.s3.us-east-1.amazonaws.com/mac/ProtonVPN_mac_v6.4.0.dmg
