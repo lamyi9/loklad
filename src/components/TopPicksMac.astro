@@ -25,7 +25,7 @@ const collectionAItems = mergedCollection.filter(item => item.data.mac);
           ))} -->
 
           {collectionAItems
-            .filter((item) => item.data.rating > 4.4)
+            .filter((item) => item.data.rating > 4.3)
             .sort(() => Math.random() - 1) // Randomize the order of items
             .map((item) => (
               <CardSm 
