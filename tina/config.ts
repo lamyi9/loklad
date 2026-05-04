@@ -48,11 +48,14 @@ export default defineConfig({
          }
        ],
        // Comment this out for now. We will come back to this later!
-       // ui: {
-       //   // This is an DEMO router. You can remove this to fit your site
-       //   router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-       // },
-     },
-   ],
- },
+       ui: {
+        router: ({document}) => {
+          if (document._sys.filename == "Hello-World") {
+            return "/";
+          }
+        },
+       },
+      },
+    ],
+  },
 });
