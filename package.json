@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"astro dev\"",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "tinacms build && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -15,10 +15,13 @@
     "@videojs/themes": "^1.0.1",
     "astro": "^5.4.2",
     "flowbite": "^2.5.1",
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.13",
+    "tinacms": "^3.7.5"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.9",
+    "@tinacms/cli": "^2.2.5",
+    "@types/node": "^25.6.0",
     "video.js": "^8.21.0"
   }
 }
