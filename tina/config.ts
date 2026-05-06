@@ -7,6 +7,45 @@ const branch =
   process.env.HEAD ||
   "main";
 
+const appFields: any[] = [
+  {
+    type: "string",
+    name: "title",
+    label: "App Name",
+    isTitle: true,
+    required: true,
+  },
+  { type: "string", name: "category", label: "Category" },
+  { type: "string", name: "collection", label: "Collection" },
+  { type: "string", name: "summary", label: "Summary", ui: { component: "textarea" } },
+  { type: "image", name: "banner", label: "Banner Image" },
+  { type: "image", name: "thumbnail", label: "Thumbnail Image" },
+  { type: "string", name: "author", label: "Author" },
+  { type: "string", name: "website", label: "Website URL" },
+  { type: "string", name: "country", label: "Country" },
+  { type: "number", name: "rating", label: "Rating (e.g. 4.7)" },
+
+  // APK
+  { type: "image", name: "apk", label: "APK Download URL" },
+  { type: "string", name: "apk_version", label: "APK Version" }, // ← string not number
+  
+  // Windows
+  { type: "image", name: "windows", label: "Windows Download URL" },
+  { type: "string", name: "win_version", label: "Windows Version" }, // ← string not number
+  
+  // Mac
+  { type: "image", name: "mac", label: "Mac Download URL" },
+  { type: "string", name: "mac_version", label: "Mac Version" }, // ← string not number
+
+  {
+    type: "rich-text",
+    name: "body",
+    label: "Description",
+    isBody: true,
+  },
+
+];
+
 export default defineConfig({
   branch,
 
@@ -35,26 +74,25 @@ export default defineConfig({
   schema: {
    collections: [
      {
-       name: "my_first_collection",
-       label: "My first collection",
-       path: "content/first",
-       fields: [
-         {
-           type: "string",
-           name: "title",
-           label: "Title",
-           isTitle: true,
-           required: true,
-         }
-       ],
-       // Comment this out for now. We will come back to this later!
-       ui: {
-        router: ({document}) => {
-          if (document._sys.filename == "Hello-World") {
-            return "/";
-          }
-        },
-       },
+        name: "communication",
+        label: "Communication Apps",
+        path: "src/content/communication", // update to match your actual folder
+        format: "md",
+        fields: appFields,
+      },
+      {
+        name: "apps",
+        label: "Apps",
+        path: "src/content/apps", // update to match your actual folder
+        format: "md",
+        fields: appFields,
+      },
+      {
+        name: "browser",
+        label: "browser",
+        path: "src/content/browsers", // update to match your actual folder
+        format: "md",
+        fields: appFields,
       },
     ],
   },

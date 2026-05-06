@@ -12,11 +12,11 @@ rating: 4.6
 video: 
 
 apk: https://loklad.s3.us-east-1.amazonaws.com/apk/FreeBrowser.apk.apk
-apk_version: 6.2
+apk_version: '6.2'
 windows: https://loklad.s3.us-east-1.amazonaws.com/windows/freebrowser-6.2.exe
-win_version: 6.2
+win_version: '6.2'
 mac:  https://loklad.s3.us-east-1.amazonaws.com/mac/freebrowser-6.2.dmg
-mac_version: 6.2
+mac_version: '6.2'
 
 
 ---
