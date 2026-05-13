@@ -10,13 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.1.0",
-    "@astrojs/tailwind": "^6.0.0",
+    "@astrojs/cloudflare": "^13.5.0",
+    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/tailwind": "^6.0.2",
     "@tinacms/auth": "^1.1.2",
     "@videojs/themes": "^1.0.1",
-    "astro": "^5.4.2",
+    "astro": "^6.3.1",
     "flowbite": "^2.5.1",
+    "fs-extra": "^11.3.5",
     "next-tinacms-s3": "^21.0.5",
+    "slate": "^0.124.1",
+    "slate-dom": "^0.124.1",
     "tailwindcss": "^3.4.13",
     "tinacms": "^3.7.5"
   },

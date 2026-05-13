@@ -1,14 +1,13 @@
 import { z, defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
 
-// Define a collection of Apps
 const appsCollection = defineCollection({
-    type: 'content', 
-// Define the schema 
-    schema:({image})=> z.object({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/apps' }),
+    schema: ({ image }) => z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string().optional(),
-        banner: image().optional(), //Image can be optional
+        banner: image().optional(),
         thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
@@ -21,15 +20,13 @@ const appsCollection = defineCollection({
     }),
 });
 
-// Define a collection of Apps
 const browserCollection = defineCollection({
-    type: 'content', 
-// Define the schema 
-    schema: ({image})=> z.object({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/browsers' }),
+    schema: ({ image }) => z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string(),
-        banner: image().optional(), //Image can be optional
+        banner: image().optional(),
         thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
@@ -42,15 +39,13 @@ const browserCollection = defineCollection({
     }),
 });
 
-// Define a collection of Apps
 const comCollection = defineCollection({
-    type: 'content', 
-// Define the schema 
-    schema:({image})=> z.object({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/communication' }),
+    schema: ({ image }) => z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string(),
-        banner: image().optional(), //Image can be optional
+        banner: image().optional(),
         thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
@@ -63,15 +58,13 @@ const comCollection = defineCollection({
     }),
 });
 
-// Define a collection of Apps
 const toolsCollection = defineCollection({
-    type: 'content', 
-// Define the schema 
-    schema:({image})=> z.object({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/tools' }),
+    schema: ({ image }) => z.object({
         title: z.string().max(100),
         category: z.array(z.string()),
         summary: z.string(),
-        banner: image().optional(), //Image can be optional
+        banner: image().optional(),
         thumbnail: image(),
         author: z.string(),
         website: z.string().url(),
@@ -83,11 +76,10 @@ const toolsCollection = defineCollection({
         apple: z.string().url().optional(),
     }),
 });
-// Export
 
 export const collections = {
-    'apps': 'appCollection',
-    'browsers': 'browserCollection',
-    'communication': 'comCollection',
-    'tools': 'toolsCollection',
+    'apps': appsCollection,
+    'browsers': browserCollection,
+    'communication': comCollection,
+    'tools': toolsCollection,
 };
